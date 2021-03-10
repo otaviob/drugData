@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="c3j-nL-lq9">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--EsqueceuA Senha View Controller-->
+        <scene sceneID="7JZ-L3-NQb">
+            <objects>
+                <viewController id="c3j-nL-lq9" customClass="EsqueceuASenhaViewController" customModule="DrugData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mee-UT-KLG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.20000000000000001" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drug03.png" translatesAutoresizingMaskIntoConstraints="NO" id="K5D-zQ-UwT">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPJ-0K-Ept">
+                                <rect key="frame" x="60" y="756" width="294" height="46"/>
+                                <color key="backgroundColor" red="0.47958846830000001" green="0.44451474470000002" blue="0.75885783449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="iHI-xr-idq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="ENVIAR ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buttonActionSendEmail:" destination="c3j-nL-lq9" eventType="touchUpInside" id="xuS-2d-IeW"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="drug06.png" translatesAutoresizingMaskIntoConstraints="NO" id="jp4-Fq-fLY">
+                                <rect key="frame" x="87" y="256" width="240" height="180"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="P6o-Aj-Ad8"/>
+                                </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="bold"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AK1-oV-RxD">
+                                <rect key="frame" x="28" y="706" width="342" height="0.0"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="gGv-ix-a3T"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5V3-9g-Mdw">
+                                <rect key="frame" x="36" y="434" width="342" height="166"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.47958846830000001" green="0.44451474470000002" blue="0.75885783449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="DIGITE AQUI SEU E-MAIL " textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JQZ-c5-oEd">
+                                <rect key="frame" x="36" y="608" width="334" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" textContentType="email"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ebX-lb-20K">
+                                <rect key="frame" x="341" y="614" width="23" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="C0b-Hd-ItA"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="envelope.fill" catalog="system"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Szk-VJ-4h7"/>
+                        <color key="backgroundColor" red="0.95294117649999999" green="0.94509803920000002" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JQZ-c5-oEd" firstAttribute="trailing" secondItem="AK1-oV-RxD" secondAttribute="trailing" id="4IY-65-QQz"/>
+                            <constraint firstItem="JQZ-c5-oEd" firstAttribute="centerY" secondItem="ebX-lb-20K" secondAttribute="centerY" id="8yF-w5-YUt"/>
+                            <constraint firstItem="Szk-VJ-4h7" firstAttribute="trailing" secondItem="JQZ-c5-oEd" secondAttribute="trailing" constant="44" id="8za-nA-JG6"/>
+                            <constraint firstItem="jp4-Fq-fLY" firstAttribute="top" secondItem="Szk-VJ-4h7" secondAttribute="top" constant="212" id="A8V-ww-vZx"/>
+                            <constraint firstItem="aPJ-0K-Ept" firstAttribute="leading" secondItem="Szk-VJ-4h7" secondAttribute="leading" constant="60" id="DSx-4k-XEj"/>
+                            <constraint firstItem="AK1-oV-RxD" firstAttribute="top" secondItem="JQZ-c5-oEd" secondAttribute="bottom" constant="64" id="GCP-A3-0Js"/>
+                            <constraint firstItem="5V3-9g-Mdw" firstAttribute="leading" secondItem="JQZ-c5-oEd" secondAttribute="leading" id="JF3-99-pWU"/>
+                            <constraint firstItem="5V3-9g-Mdw" firstAttribute="leading" secondItem="Szk-VJ-4h7" secondAttribute="leading" constant="36" id="Mtr-rK-Fr3"/>
+                            <constraint firstItem="jp4-Fq-fLY" firstAttribute="leading" secondItem="Szk-VJ-4h7" secondAttribute="leading" constant="87" id="T47-AY-Vla"/>
+                            <constraint firstItem="JQZ-c5-oEd" firstAttribute="top" secondItem="5V3-9g-Mdw" secondAttribute="bottom" constant="8" id="TQz-DV-ewV"/>
+                            <constraint firstItem="ebX-lb-20K" firstAttribute="leading" secondItem="Szk-VJ-4h7" secondAttribute="leading" constant="341" id="ZD9-gQ-eyg"/>
+                            <constraint firstItem="ebX-lb-20K" firstAttribute="top" secondItem="5V3-9g-Mdw" secondAttribute="bottom" constant="14" id="ZzZ-aM-Dea"/>
+                            <constraint firstItem="aPJ-0K-Ept" firstAttribute="top" secondItem="AK1-oV-RxD" secondAttribute="bottom" constant="50" id="bHh-5n-ADk"/>
+                            <constraint firstItem="jp4-Fq-fLY" firstAttribute="centerX" secondItem="5V3-9g-Mdw" secondAttribute="centerX" id="bg0-Il-lKQ"/>
+                            <constraint firstItem="5V3-9g-Mdw" firstAttribute="top" secondItem="Szk-VJ-4h7" secondAttribute="top" constant="390" id="dwn-Zg-SR5"/>
+                            <constraint firstItem="K5D-zQ-UwT" firstAttribute="leading" secondItem="Szk-VJ-4h7" secondAttribute="leading" id="eFX-bC-kUJ"/>
+                            <constraint firstItem="5V3-9g-Mdw" firstAttribute="centerX" secondItem="aPJ-0K-Ept" secondAttribute="centerX" id="fLI-FQ-oFT"/>
+                            <constraint firstItem="K5D-zQ-UwT" firstAttribute="trailing" secondItem="Szk-VJ-4h7" secondAttribute="trailing" id="fea-iZ-aLK"/>
+                            <constraint firstItem="K5D-zQ-UwT" firstAttribute="top" secondItem="mee-UT-KLG" secondAttribute="top" id="n6b-9I-A8C"/>
+                            <constraint firstItem="Szk-VJ-4h7" firstAttribute="trailing" secondItem="aPJ-0K-Ept" secondAttribute="trailing" constant="60" id="nl0-Vh-2yK"/>
+                            <constraint firstItem="AK1-oV-RxD" firstAttribute="leading" secondItem="mee-UT-KLG" secondAttribute="leadingMargin" constant="8" id="odI-zy-Tjp"/>
+                            <constraint firstItem="Szk-VJ-4h7" firstAttribute="bottom" secondItem="aPJ-0K-Ept" secondAttribute="bottom" constant="60" id="vD6-cf-5mT"/>
+                            <constraint firstAttribute="bottom" secondItem="K5D-zQ-UwT" secondAttribute="bottom" id="wE5-2m-8zx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buttonOutletSendEmail" destination="aPJ-0K-Ept" id="5DJ-uy-z2u"/>
+                        <outlet property="labelPasswordText" destination="5V3-9g-Mdw" id="6vw-6O-dGB"/>
+                        <outlet property="textFieldUserEmail" destination="JQZ-c5-oEd" id="3RM-A9-E7Y"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="51V-CK-3jE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="77.678571428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="drug03.png" width="124" height="581"/>
+        <image name="drug06.png" width="355" height="354.5"/>
+        <image name="envelope.fill" catalog="system" width="128" height="93"/>
+    </resources>
+</document>

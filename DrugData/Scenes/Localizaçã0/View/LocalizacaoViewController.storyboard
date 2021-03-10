@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5pM-yn-rAu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Localização-->
+        <scene sceneID="bjV-ab-MPH">
+            <objects>
+                <viewController id="5pM-yn-rAu" customClass="LocalizacaoViewController" customModule="DrugData" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MLA-ZU-vr0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ddu-SO-sP1">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="319"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4g-Do-qjQ">
+                                        <rect key="frame" x="117.5" y="225" width="179" height="25.5"/>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="21"/>
+                                        <color key="textColor" red="0.75686274509999996" green="0.77647058820000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgU-z8-qz9">
+                                        <rect key="frame" x="117.5" y="192.5" width="179" height="31.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="179" id="8jR-cp-R7k"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encontre as farmácias mais próximas📍" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dtv-8q-2Bg">
+                                        <rect key="frame" x="0.0" y="275" width="406" height="24"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Df-PQ-zes">
+                                        <rect key="frame" x="144.5" y="59" width="125" height="125"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="Ul4-bL-cbE"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="YSQ-yh-Yf1"/>
+                                            <constraint firstAttribute="width" constant="125" id="p70-1U-OnL"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.47958846830000001" green="0.44451474470000002" blue="0.75885783449999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="h4g-Do-qjQ" firstAttribute="top" secondItem="jgU-z8-qz9" secondAttribute="bottom" constant="1" id="37d-Xd-kI6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Dtv-8q-2Bg" secondAttribute="bottom" constant="20" id="3GS-LK-Iua"/>
+                                    <constraint firstItem="jgU-z8-qz9" firstAttribute="top" secondItem="1Df-PQ-zes" secondAttribute="bottom" constant="8.5" id="LDW-4z-xhS"/>
+                                    <constraint firstItem="Dtv-8q-2Bg" firstAttribute="leading" secondItem="Ddu-SO-sP1" secondAttribute="leading" id="OQt-xS-ch4"/>
+                                    <constraint firstItem="1Df-PQ-zes" firstAttribute="centerX" secondItem="Ddu-SO-sP1" secondAttribute="centerX" id="Ogb-pL-hVs"/>
+                                    <constraint firstItem="1Df-PQ-zes" firstAttribute="top" secondItem="Ddu-SO-sP1" secondAttribute="top" constant="59" id="j9M-lc-avW"/>
+                                    <constraint firstItem="jgU-z8-qz9" firstAttribute="trailing" secondItem="h4g-Do-qjQ" secondAttribute="trailing" id="jBv-Gg-xKY"/>
+                                    <constraint firstItem="Dtv-8q-2Bg" firstAttribute="trailing" secondItem="Ddu-SO-sP1" secondAttribute="trailingMargin" id="kKq-kO-z8v"/>
+                                    <constraint firstItem="jgU-z8-qz9" firstAttribute="leading" secondItem="h4g-Do-qjQ" secondAttribute="leading" id="l8E-pn-QSg"/>
+                                    <constraint firstItem="1Df-PQ-zes" firstAttribute="centerX" secondItem="jgU-z8-qz9" secondAttribute="centerX" id="rdQ-cS-7Nn"/>
+                                    <constraint firstItem="Dtv-8q-2Bg" firstAttribute="top" secondItem="h4g-Do-qjQ" secondAttribute="bottom" constant="24.5" id="uGj-yP-V4d"/>
+                                </constraints>
+                            </view>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJF-wa-YUX">
+                                <rect key="frame" x="0.0" y="315" width="414" height="498"/>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oSm-oW-Rka"/>
+                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ddu-SO-sP1" firstAttribute="trailing" secondItem="gJF-wa-YUX" secondAttribute="trailing" id="9vS-c7-yWF"/>
+                            <constraint firstItem="gJF-wa-YUX" firstAttribute="bottom" secondItem="oSm-oW-Rka" secondAttribute="bottom" id="Ba0-G9-qNY"/>
+                            <constraint firstItem="Ddu-SO-sP1" firstAttribute="top" secondItem="MLA-ZU-vr0" secondAttribute="top" id="M0Y-TE-4Tz"/>
+                            <constraint firstItem="Ddu-SO-sP1" firstAttribute="leading" secondItem="gJF-wa-YUX" secondAttribute="leading" id="gKO-MJ-QHS"/>
+                            <constraint firstItem="Ddu-SO-sP1" firstAttribute="leading" secondItem="MLA-ZU-vr0" secondAttribute="leading" id="gQs-qV-o6s"/>
+                            <constraint firstItem="oSm-oW-Rka" firstAttribute="bottom" secondItem="Ddu-SO-sP1" secondAttribute="bottom" constant="494" id="lfl-S9-6PW"/>
+                            <constraint firstAttribute="trailing" secondItem="Ddu-SO-sP1" secondAttribute="trailing" id="p41-VY-uiU"/>
+                            <constraint firstItem="gJF-wa-YUX" firstAttribute="top" secondItem="oSm-oW-Rka" secondAttribute="top" constant="271" id="rWd-0i-Nec"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Localização" image="location.fill" catalog="system" id="qti-EJ-bsg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageViewAvatar" destination="1Df-PQ-zes" id="wE4-XU-sYM"/>
+                        <outlet property="labelLocation" destination="h4g-Do-qjQ" id="BqJ-aH-GAR"/>
+                        <outlet property="labelName" destination="jgU-z8-qz9" id="Of5-iq-LQw"/>
+                        <outlet property="mapkitMap" destination="gJF-wa-YUX" id="HTG-Er-piz"/>
+                        <outlet property="viewBlue" destination="Ddu-SO-sP1" id="S7O-e2-jiM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JbT-rB-kO9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-288.40579710144931" y="66.964285714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="location.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
