@@ -2,7 +2,8 @@
 //  ControladosViewController.swift
 //  DrugData
 //
-//  Created by Grazi Berti on 22/11/20.
+//  Created by Otavio Brito on 10/09/20.
+//  Copyright © 2020 Otavio Brito. All rights reserved.
 //
 
 import UIKit

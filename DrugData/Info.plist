@@ -33,15 +33,14 @@
 			<array>
 				<string>fb176422010909812</string>
 			</array>
-
 		</dict>
 	</array>
-    <key>FacebookAppID</key>
-    <string>176422010909812</string>
-    <key>FacebookDisplayName</key>
-    <string>DrugData</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>FacebookAppID</key>
+	<string>176422010909812</string>
+	<key>FacebookDisplayName</key>
+	<string>DrugData</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>

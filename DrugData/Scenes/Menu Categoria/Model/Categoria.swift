@@ -2,7 +2,8 @@
 //  Laboratorio.swift
 //  DrugData
 //
-//  Created by Grazi Berti on 08/01/21.
+//  Created by Otavio Brito on 10/09/20.
+//  Copyright © 2020 Otavio Brito. All rights reserved.
 //
 
 import Foundation

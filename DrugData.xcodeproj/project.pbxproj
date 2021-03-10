@@ -325,7 +325,6 @@
 			children = (
 				F2F5F475258A5AF700E693EB /* Scenes */,
 				F25AC4AB25A6346F005EB742 /* Image */,
-				84393FDC25CC862E00A39896 /* userplaceholder.png */,
 				F233D0A52559E99500D5CE2D /* SceneDelegate.swift */,
 				F233D0AC2559E99900D5CE2D /* Assets.xcassets */,
 				F233D0AE2559E99900D5CE2D /* LaunchScreen.storyboard */,
@@ -444,6 +443,7 @@
 		F25AC4AB25A6346F005EB742 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				84393FDC25CC862E00A39896 /* userplaceholder.png */,
 				F2E2C925258BE94700FF0982 /* drug01.png */,
 				F2E2C924258BE94700FF0982 /* drug02.png */,
 				F2E2C92B258BF22200FF0982 /* drug03.png */,
@@ -1394,7 +1394,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.DrugData";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-otaviob.DrugData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1414,7 +1414,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-bertiGrazi.DrugData";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.github-otaviob.DrugData";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

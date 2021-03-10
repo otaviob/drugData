@@ -2,7 +2,8 @@
 //  DrugDataUITests.swift
 //  DrugDataUITests
 //
-//  Created by Grazi Berti on 09/11/20.
+//  Created by Otavio Brito on 10/09/20.
+//  Copyright © 2020 Otavio Brito. All rights reserved.
 //
 
 import XCTest
